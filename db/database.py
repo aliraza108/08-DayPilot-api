@@ -5,7 +5,8 @@ DayPilot - Database (SQLite + aiosqlite for async I/O)
 import aiosqlite
 import os
 
-DB_PATH = os.getenv("DB_PATH", "daypilot.db")
+DB_PATH = os.getenv("DB_PATH", "/tmp/daypilot.db")
+
 
 
 async def get_db():
